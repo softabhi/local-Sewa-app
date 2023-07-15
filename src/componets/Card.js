@@ -1,6 +1,6 @@
 import React from 'react'
-import '../Style.css';
-import img1 from '../assest/images/clot1.webp'
+import './Style.css';
+import img1 from './assest/images/clot1.webp'
 import itemList from './CardItemList'
 
 import { BsStarFill, BsStarHalf } from 'react-icons/bs'
@@ -9,12 +9,12 @@ const Card = () => {
     return (
         <>
             <div className="container">
-                <div className="row">
+                <div className="row ">
 
 
                     {itemList.map((item, index) => {
                         return (
-                            <div className="col-6 col-lg-3">
+                            <div className="col-6 col-lg-3 my-3">
                                 <div className="card" style={{ width: "" }}>
                                     <img src={img1} className="img-fluid card-img" alt="..." style={{ height: "y" }} />
                                     <div className="card-body card-main">
