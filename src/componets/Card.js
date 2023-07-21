@@ -8,7 +8,7 @@ const Card = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="container card_container">
                 <div className="row ">
 
 

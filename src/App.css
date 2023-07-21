@@ -1,0 +1,21 @@
+body{
+    /* background: rgba(49,49,49,0.8); */
+    /* z-index: 1; */
+}
+#root{
+  
+   
+}
+/* .main{
+   
+    position: relative;
+    margin-top: -100rem;
+} */
+
+#close_btn{
+    /* position: absolute; */
+    /* right: 0px; */
+    /* padding-left: 1rem; */
+    margin-top: 40px;
+    color: red;
+}

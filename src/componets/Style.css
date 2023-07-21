@@ -3,6 +3,10 @@
         width: 14rem;
         height: 5rem;
     }
+    .card_container{
+        margin-left:-8px;
+        margin-right: 20px;
+    }
     .text-size {
         /* color: red; */
         font-size: 12px;

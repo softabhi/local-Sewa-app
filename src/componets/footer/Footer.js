@@ -8,14 +8,12 @@ const Footer = () => {
                 <div className="row bg-success" style={{  }}>
                     <div className="col-sm-12 subscribe">
                         {/* <div className=''> */}
-                        <h2>Subscribe Us For Latest Services Updates</h2>
+                        <h2><span>Subscribe</span> Us For Latest Services Updates</h2>
                         <div className='inp_box'>
                             <input className='' type="text" />
                             <button>Submit</button>
                         </div>
-
                         {/* </div> */}
-
                     </div>
                 </div>
                 <div className="row" style={{  background: "#002147", textAlign: "center", color: "white" }}>

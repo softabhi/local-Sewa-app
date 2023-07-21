@@ -1,17 +1,35 @@
 import React from 'react'
+import { useState,useContext } from 'react';
 import { FaOutdent, FaSearch, FaRegUserCircle,FaSignInAlt } from 'react-icons/fa'
-// import { FaMagnifyingGlass } from 'react-icons/Fa6'
+import { Link } from 'react-router-dom';
+import { globalValue } from '../../App';
 
 import './navbarstyle.css';
+
+
 const Navbar = () => {
+
+    const [model,setModle] = useState(false);
+
+    const {modelFunction} = useContext(globalValue)
+
+    // const modelFunction = ()=>{
+    //     setModle(true)
+    // }
+
     return (
         <>
             <div className="container-main  nav_main">
                 <div className="row bg-primary nav_row">
-                    <div className="col-sm-4 col-lg-2 text-white">
+                    <div className="col-sm-4 col-lg-2 d-flex text-white logo">
                         <h3 id='heading_logo'>Local<span className='text-warning'>Sewa</span></h3>
+                        <h2 className='ms-5'> <FaOutdent className='d-lg-none d-sm-block ms-5' /></h2>
+                       
                     </div>
-
+                    
+                    {/* <div className="col-2"> */}
+                                
+                            {/* </div> */}
                     <div className="col-sm-8 col-lg-6  " >
                         <div className="row ">
                             <div className="col-6 search_item ms-5" >
@@ -21,16 +39,21 @@ const Navbar = () => {
                             <div className="col-4 area_inp">
                                 <input type="text" className=' search_area' placeholder='enter service area' />
                             </div>
-                            <div className="col-2">
-                                {/* <FaOutdent className='d-lg-none d-sm-block ms-5' /> */}
-                            </div>
+                           
                         </div>
                     </div>
 
                     <div className="col-lg-4 d-flex login_section">
                         <div className="login me-3">
                             {/* <h5>User Login</h5> */}
-                            <FaSignInAlt className='user_icon' />
+                            {/* <Link to=''> */}
+                                <h2><FaSignInAlt className='user_icon' 
+                                onClick={modelFunction}
+                                /></h2>
+                                
+                                
+                            {/* </Link> */}
+                            
 
                         </div>
                         <div className="mer_login">
@@ -40,6 +63,7 @@ const Navbar = () => {
 
                     </div>
                 </div>
+
                 <div className="row sub_navbar">
                     <div className="col-lg-4 category_list">
                         <select name="" id="">
@@ -66,6 +90,9 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+
+
+
         </>
     )
 }

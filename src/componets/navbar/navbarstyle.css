@@ -34,9 +34,13 @@
    padding: 5px 18px;
    border: 2px solid rgb(109, 105, 105);
 }
+
+.logo h2{
+  margin-left: 15rem;
+}
 #heading_logo{
  font-weight: 700;
- margin-left: 4rem;
+ margin-left: 8rem;
 }
 #heading_logo:hover{
     /* border: 2px solid yellow;
@@ -106,9 +110,13 @@
    font-size: 23px;
 }
 
+
+
+
+
 @media (max-width:500px) {
    #heading_logo{
-      margin-left: 7px;
+      margin-left: 15px;
    }
    .nav_main{
       height: 5rem;
@@ -130,5 +138,17 @@
    .search_area{
       display: none;
       /* padding: 0; */
+   }
+   .mer_login{
+      display: none;
+   }
+   .login{
+      display: none;
+   }
+   .login_section{
+      display: none;
+   }
+   .sub_navbar{
+      display: none;
    }
 }
