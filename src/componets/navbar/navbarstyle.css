@@ -10,13 +10,18 @@
    padding: 10px 0;
 }
 
+.input_sec{
+   margin-left: 3rem;
+}
 .search_item{
    /* box-sizing: border-box; */
    background-color: white;
    width: 25rem;
+   /* margin-left: 20px; */
    border-radius: 20px;
    padding: 2px 18px;  
    border: 2px solid rgb(109, 105, 105);
+  
 }
 .search_item input{
    border: none;
@@ -40,7 +45,7 @@
 }
 #heading_logo{
  font-weight: 700;
- margin-left: 8rem;
+ margin-left: 7rem;
 }
 #heading_logo:hover{
     /* border: 2px solid yellow;
@@ -81,8 +86,8 @@
 
 }
 
-.login_section{
-   /* margin-left: 1rem; */
+.login{
+   margin-left: 4rem;
 }
 .mer_login{
    /* border-bottom: 3px solid black; */
@@ -127,13 +132,16 @@
       height: 2rem;
       padding: 0;
       padding-left: 12px;
-      margin-left: 18px;
+      /* margin-left: 18px; */
    }
    .search_item input{
       border: none;
       width: 10rem;
       outline-style: none;
       /* height: 15px; */
+   }
+   .input_sec{
+      margin-left: 1rem;
    }
    .search_area{
       display: none;

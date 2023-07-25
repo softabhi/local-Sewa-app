@@ -1,0 +1,25 @@
+.slider_menu{
+    /* background: rgba(49,49,49,0.8); */
+    background-color: red;
+    position: fixed;
+    z-index: 1;
+    margin-left: -69vw;
+    /* margin-top: -170rem; */
+    height: 100vh;
+    width: 70vw;
+    /* transform: translateY(45px); */
+    transition: 3s;
+}
+
+.active_slider{
+    margin-left: 0;
+    background-color: red;
+    position: fixed;
+    z-index: 1;
+    /* margin-left: -69vw; */
+    /* margin-top: -170rem; */
+    height: 100vh;
+    width: 70vw;
+    /* transform: translateY(45px); */
+    transition: 3s;
+}

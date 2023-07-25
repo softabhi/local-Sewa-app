@@ -4,11 +4,11 @@ import './footer.css';
 const Footer = () => {
     return (
         <>
-            <div className="container-main">
+            <div className="container-main mt-3">
                 <div className="row bg-success" style={{  }}>
                     <div className="col-sm-12 subscribe">
                         {/* <div className=''> */}
-                        <h2><span>Subscribe</span> Us For Latest Services Updates</h2>
+                        <h2>Subscribe <span>Us For Latest Services Updates</span> </h2>
                         <div className='inp_box'>
                             <input className='' type="text" />
                             <button>Submit</button>

@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const [model,setModle] = useState(false);
 
-    const {modelFunction} = useContext(globalValue)
+    const {modelFunction,sliderFunction} = useContext(globalValue)
 
     // const modelFunction = ()=>{
     //     setModle(true)
@@ -23,16 +23,18 @@ const Navbar = () => {
                 <div className="row bg-primary nav_row">
                     <div className="col-sm-4 col-lg-2 d-flex text-white logo">
                         <h3 id='heading_logo'>Local<span className='text-warning'>Sewa</span></h3>
-                        <h2 className='ms-5'> <FaOutdent className='d-lg-none d-sm-block ms-5' /></h2>
+                        <h2 className='ms-5'> <FaOutdent className='d-lg-none d-sm-block ms-5' 
+                        onClick={sliderFunction}
+                        /></h2>
                        
                     </div>
                     
                     {/* <div className="col-2"> */}
                                 
                             {/* </div> */}
-                    <div className="col-sm-8 col-lg-6  " >
-                        <div className="row ">
-                            <div className="col-6 search_item ms-5" >
+                    <div className="col-sm-8 col-lg-6  ms-" >
+                        <div className="row input_sec">
+                            <div className="col-6 search_item" >
                                 <input type="text" className=' ' placeholder='search your requiard services' />
                                 <span><FaSearch /></span>
                             </div>

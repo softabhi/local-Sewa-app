@@ -4,32 +4,51 @@ import { useState, createContext } from 'react';
 import Home from './componets/Home';
 import { Routes, Route } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
+import Slider from './componets/SLIDERMENU/Slider';
 // import './login.css';
 export const globalValue = createContext();
 function App() {
 
   const [model, setModle] = useState(false);
+  const [slider, setSlider] = useState(false);
 
   const modelFunction = () => {
     setModle(!model)
-    console.log(model)
+    // console.log(model)
   }
+
+  const sliderFunction = () => {
+    setSlider(!slider)
+    console.log(slider)
+  }
+
+  // let target;
+  //  if(slider){
+  //   document.body.classList.add('active_slider')
+    
+  //  }else(
+  //    target = document.getElementById("slider_id")
+    
+  //   target.classList.add('active_slider');
+  //   // document.body.classList.remove('active_slider')
+  //  )
 
   return (
 
-    <globalValue.Provider value={{ modelFunction: modelFunction }}>
+    <globalValue.Provider value={{ modelFunction: modelFunction, sliderFunction,slider }}>
       <>
+      <Slider/>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home/>} />
           <Route path='/user_login' element />
         </Routes>
         {/* <Home/> */}
 
         {
-          model && 
+          model &&
           <div className="container-fluid main">
             <div className="row sub_element">
-              <h2  onClick={modelFunction}>< FaTimes id='close_btn'/></h2>
+              <h2 onClick={modelFunction}>< FaTimes id='close_btn' /></h2>
               <div className="col ">
                 <div className="row heading">
                   <div className="col">
@@ -69,6 +88,32 @@ function App() {
             </div>
           </div>
         }
+
+
+        {/* {slider &&
+          <div className="container slider_menu">
+            <div className="row">
+              <div className="col">
+                <div className="row">
+                  <div className="col">
+                    <img src="" alt="" />
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col">
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Category</li>
+                    <li>Orders</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        } */}
+
+
+
       </>
     </globalValue.Provider>
   );

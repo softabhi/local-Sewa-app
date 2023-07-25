@@ -1,11 +1,21 @@
+
 @media screen and (max-width:500px) {
     .card-img {
         width: 14rem;
         height: 5rem;
     }
+    .card{
+        margin-right: -10px;
+        margin-left: -10px;
+        margin-bottom: 1px;
+    }
+    .card-body{
+        padding: 2px;
+    }
     .card_container{
-        margin-left:-8px;
-        margin-right: 20px;
+        /* margin-left:-8px; */
+        /* margin-right: 20px; */
+        
     }
     .text-size {
         /* color: red; */

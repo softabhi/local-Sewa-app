@@ -21,8 +21,9 @@
     align-items: center;
     padding: 15px 0px;
 }
-.subscribe h2 span{
+.subscribe h5 span{
     color: red;
+    
 }
 
 .subscribe input {

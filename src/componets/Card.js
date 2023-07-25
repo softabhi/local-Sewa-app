@@ -14,7 +14,7 @@ const Card = () => {
 
                     {itemList.map((item, index) => {
                         return (
-                            <div className="col-6 col-lg-3 my-3">
+                            <div className="col-6 col-lg-3 mt-3">
                                 <div className="card" style={{ width: "" }}>
                                     <img src={img1} className="img-fluid card-img" alt="..." style={{ height: "y" }} />
                                     <div className="card-body card-main">
