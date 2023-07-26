@@ -14,7 +14,7 @@ function App() {
 
   const modelFunction = () => {
     setModle(!model)
-    // console.log(model)
+    console.log(model)
   }
 
   const sliderFunction = () => {
@@ -22,6 +22,7 @@ function App() {
     console.log(slider)
   }
 
+  
   // let target;
   //  if(slider){
   //   document.body.classList.add('active_slider')

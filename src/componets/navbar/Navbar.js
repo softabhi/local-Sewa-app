@@ -9,7 +9,7 @@ import './navbarstyle.css';
 
 const Navbar = () => {
 
-    const [model,setModle] = useState(false);
+    // const [model,setModle] = useState(false);
 
     const {modelFunction,sliderFunction} = useContext(globalValue)
 
