@@ -1,6 +1,6 @@
 import React from 'react'
-import { useState,useContext } from 'react';
-import { FaOutdent, FaSearch, FaRegUserCircle,FaSignInAlt } from 'react-icons/fa'
+import { useState, useContext } from 'react';
+import { FaOutdent, FaSearch, FaRegUserCircle, FaSignInAlt } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { globalValue } from '../../App';
 
@@ -11,7 +11,7 @@ const Navbar = () => {
 
     // const [model,setModle] = useState(false);
 
-    const {modelFunction,sliderFunction} = useContext(globalValue)
+    const { modelFunction, sliderFunction } = useContext(globalValue)
 
     // const modelFunction = ()=>{
     //     setModle(true)
@@ -21,27 +21,27 @@ const Navbar = () => {
         <>
             <div className="container-main  nav_main">
                 <div className="row bg-primary nav_row">
-                    <div className="col-sm-4 col-lg-2 d-flex text-white logo">
+                    <div className="col-sm-4 col-lg-2 col-md-3 d-flex text-white logo">
                         <h3 id='heading_logo'>Local<span className='text-warning'>Sewa</span></h3>
-                        <h2 className='ms-5'> <FaOutdent className='d-lg-none d-sm-block ms-5' 
-                        onClick={sliderFunction}
+                        <h2 className=''> <FaOutdent className='d-lg-none d-sm-block '
+                            onClick={sliderFunction}
                         /></h2>
-                       
+
                     </div>
-                    
+
                     {/* <div className="col-2"> */}
-                                
-                            {/* </div> */}
-                    <div className="col-sm-8 col-lg-6  ms-" >
+
+                    {/* </div> */}
+                    <div className="col-12 col-sm-12 col-lg-6 col-md-3">
                         <div className="row input_sec">
-                            <div className="col-6 search_item" >
+                            <div className="col-9 search_item" >
                                 <input type="text" className=' ' placeholder='search your requiard services' />
                                 <span><FaSearch /></span>
                             </div>
-                            <div className="col-4 area_inp">
+                            <div className="col-3 area_inp">
                                 <input type="text" className=' search_area' placeholder='enter service area' />
                             </div>
-                           
+
                         </div>
                     </div>
 
@@ -49,13 +49,13 @@ const Navbar = () => {
                         <div className="login me-3">
                             {/* <h5>User Login</h5> */}
                             {/* <Link to=''> */}
-                                <h2><FaSignInAlt className='user_icon' 
+                            <h2><FaSignInAlt className='user_icon'
                                 onClick={modelFunction}
-                                /></h2>
-                                
-                                
+                            /></h2>
+
+
                             {/* </Link> */}
-                            
+
 
                         </div>
                         <div className="mer_login">

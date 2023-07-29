@@ -11,12 +11,19 @@
 }
 
 .input_sec{
-   margin-left: 3rem;
+   margin-left: 4rem;
+   max-width: 36rem;
+   /* display: flex; */
 }
+/* .input_sec:focus{
+   outline: none;
+  it is working on input tag
+   border: 3px solid red;
+} */
 .search_item{
    /* box-sizing: border-box; */
    background-color: white;
-   width: 25rem;
+   width: 70%;
    /* margin-left: 20px; */
    border-radius: 20px;
    padding: 2px 18px;  
@@ -25,9 +32,13 @@
 }
 .search_item input{
    border: none;
-   width: 20rem;
+   /* width: 23rem; */
+   width: 90%;
    outline-style: none;
 }
+ 
+
+
 .search_item span{
    position: relative;
     left: 22px;
@@ -41,7 +52,7 @@
 }
 
 .logo h2{
-  margin-left: 15rem;
+  margin-left: 9rem;
 }
 #heading_logo{
  font-weight: 700;
@@ -127,8 +138,15 @@
       height: 5rem;
       /* position: relative; */
    }
+   .input_sec{
+      margin-left: 1rem;
+      max-width: 450px;
+      min-width: 250px;
+      /* width: 100%; */
+   }
    .search_item{
-      width: 15rem;
+      /* width: 15rem; */
+      width: 90%;
       height: 2rem;
       padding: 0;
       padding-left: 12px;
@@ -136,12 +154,13 @@
    }
    .search_item input{
       border: none;
-      width: 10rem;
+      /* width: 18rem; */
+      width: 80%;
       outline-style: none;
       /* height: 15px; */
    }
-   .input_sec{
-      margin-left: 1rem;
+   .search_item span{
+      /* width: 100%; */
    }
    .search_area{
       display: none;
