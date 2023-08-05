@@ -1,6 +1,6 @@
 import './App.css';
 // import './componets/login/'
-import { useState, createContext,useRef,useEffect} from 'react';
+import { useState, createContext } from 'react';
 import Home from './componets/Home';
 import { Routes, Route } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
@@ -11,49 +11,16 @@ function App() {
 
   const [model, setModle] = useState(false);
   const [slider, setSlider] = useState(false);
-  const sliderRef = useRef();
-  const loginFormRef = useRef();
 
   const modelFunction = () => {
     setModle(!model)
-    // console.log(model)
+    console.log(model)
   }
 
   const sliderFunction = () => {
     setSlider(!slider)
-    // console.log(slider)
+    console.log(slider)
   }
-
-  useEffect(()=>{
-    let handler = (e)=>{
-      if(!loginFormRef.current.contains(e.target)){
-        setModle(false)
-      }
-    };
-
-    document.addEventListener('mousedown',handler);
-
-    return ()=>{
-      document.removeEventListener('mousedown',handler)
-    }
-  })
-
-
-  useEffect(()=>{
-    let handler = (e)=>{
-      if(!sliderRef.current.contains(e.target)){
-        setSlider(false)
-      }
-    };
-
-    document.addEventListener('mousedown',handler);
-
-    return ()=>{
-      document.removeEventListener('mousedown',handler)
-    }
-  })
-
-  console.log(loginFormRef.current)
 
   
   // let target;
@@ -71,7 +38,7 @@ function App() {
 
     <globalValue.Provider value={{ modelFunction: modelFunction, sliderFunction,slider }}>
       <>
-      <Slider sliderRef={sliderRef}/>
+      <Slider/>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/user_login' element />
@@ -80,8 +47,8 @@ function App() {
 
         {
           model &&
-          <div  className="container-fluid main">
-            <div ref={loginFormRef} className="row sub_element">
+          <div className="container-fluid main">
+            <div className="row sub_element">
               <h2 onClick={modelFunction}>< FaTimes id='close_btn' /></h2>
               <div className="col ">
                 <div className="row heading">
