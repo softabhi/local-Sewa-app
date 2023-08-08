@@ -3,7 +3,7 @@
     position: fixed;
     z-index: 1;
     width: 100vw; 
-    height: 80vh;
+    height: 100vh;
 }
 .slider_menu{
     /* background: rgba(49,49,49,0.8); */
@@ -69,5 +69,5 @@ h5{
 .logout_btn button{
     position: absolute;
     /* margin-bottom: 10px; */
-    bottom: 10rem;
+    bottom: 7rem;
 }
