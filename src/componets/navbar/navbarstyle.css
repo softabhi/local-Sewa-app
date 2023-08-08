@@ -52,7 +52,7 @@
 }
 
 .logo h2{
-  margin-left: 9rem;
+  margin-left: 13rem;
 }
 #heading_logo{
  font-weight: 700;
@@ -134,6 +134,7 @@
    #heading_logo{
       margin-left: 15px;
    }
+  
    .nav_main{
       height: 5rem;
       /* position: relative; */
