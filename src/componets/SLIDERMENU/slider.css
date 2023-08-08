@@ -1,9 +1,9 @@
 .active_back{
     background: rgba(49,49,49,0.8);
     position: fixed;
-z-index: 1;
+    z-index: 1;
     width: 100vw; 
-    height: 100vh;
+    height: 80vh;
 }
 .slider_menu{
     /* background: rgba(49,49,49,0.8); */
@@ -47,19 +47,27 @@ z-index: 1;
     border-bottom: 2px solid rgb(56, 56, 238);
 }
 .menu_icon li{
+    display: flex;
     list-style: none;
-    border: 2px solid blue;
-    text-align: center;
+    /* border: 2px solid blue; */
+    /* text-align: center; */
     margin: 3px 0;
+    font-size: 18px;
+
 }
 .menu_icon li:hover{
     background: blue;
     color: #fff;
     border-color: black;
+    font-weight: 700;
+}
+h5{
+    margin-right: 20px;
+    margin-left: 8px;
 }
 
 .logout_btn button{
     position: absolute;
     /* margin-bottom: 10px; */
-    bottom: 10px;
+    bottom: 10rem;
 }
