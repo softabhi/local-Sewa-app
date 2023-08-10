@@ -10,6 +10,7 @@ const Footer = () => {
                         {/* <div className=''> */}
                         <h2>Subscribe <span>Us For Latest Services Updates</span> </h2>
                         <div className='inp_box'>
+                            
                             <input className='' type="text" />
                             <button>Submit</button>
                         </div>
