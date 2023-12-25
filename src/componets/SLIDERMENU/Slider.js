@@ -5,7 +5,8 @@ import { FaHippo, FaTimes } from 'react-icons/fa'
 import { useContext, useRef, useState } from 'react'
 import { globalValue } from '../../App'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBagShopping, faHippo, faHouse, faList, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBagShopping, faHippo, faHouse, faList, faUser} from '@fortawesome/free-solid-svg-icons'
+
 
 const Slider = ({ sliderRef }) => {
 
@@ -37,12 +38,17 @@ const Slider = ({ sliderRef }) => {
                 <li><h5><FontAwesomeIcon icon={faUser} /></h5>Profile</li>
                 <li><h5><FontAwesomeIcon icon={faList} /></h5>Category</li>
                 <li><h5><FontAwesomeIcon icon={faBagShopping} /></h5>Orders</li>
+               
               </div>
             </div>
 
             <div className="row">
-              <div className="col logout_btn">
-                <button>Logout</button>
+              <div className="col ">
+                <div className='logout_btn'>
+                <button type="button" id='login_btn' class="btn btn-outline-primary">Login</button>
+                <button type="button" id='sing_btn' class="btn btn-outline-success">SingUp</button>
+                </div>
+
               </div>
             </div>
           </div>

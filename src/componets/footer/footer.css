@@ -54,6 +54,22 @@
   outline-style: none;
    width: 310px;
 }
+
+.footer_head{
+    margin-left: 25px;
+}
+
+#twt{
+    margin-right: 10px;
+}
+#fac{
+    margin-right: 10px;
+}
+#inst{
+    margin-right: 10px;
+}
+
+
 @media (max-width:500px) {
     .subscribe {
         display: block;

@@ -38,7 +38,7 @@
     width: 60px;
     margin-top: 1rem;
     margin-left: 3rem;
-    border-radius: 20px;
+    border-radius: 80px;
     margin-bottom: 1rem;
     border: 2px solid greenyellow;
     
@@ -66,8 +66,22 @@ h5{
     margin-left: 8px;
 }
 
+.logout_btn{
+    display: flex;
+}
+
+#login_btn{
+    margin-right: 30px;
+    margin-left: 20px;
+    padding: 0 18px;
+}
+#sing_btn{
+    padding: 0 18px;
+}
+
 .logout_btn button{
-    position: absolute;
+    position: relative;
     /* margin-bottom: 10px; */
-    bottom: 7rem;
+    bottom: -20rem;
+    font-size: 1.5rem;
 }

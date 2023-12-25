@@ -1,5 +1,8 @@
 import React from 'react'
 import './footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  } from '@fortawesome/free-solid-svg-icons'
+import { FaTwitter,FaFacebookF,FaInstagram,FaYoutube,FaSquareInstagram } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -20,10 +23,14 @@ const Footer = () => {
                 <div className="row" style={{  background: "#002147", textAlign: "center", color: "white" }}>
                     <div className="col-lg-1"></div>
                     <div className="col-lg-2 col-sm-1" >
-                        <h3 id='heading_logo' className='mt-5 footer_logo'>Local<span className='text-warning'>Sewa</span></h3>
+                        <h4 id='' className='mt-5 footer_logo'>Local<span className='text-warning'>Sewa</span></h4>
+                       <FaTwitter id='twt'/>
+                       <FaFacebookF id='fac'/>
+                       <FaSquareInstagram id='inst'/>
+                       <FaYoutube id='yut'/>
                     </div>
                     <div className="col-sm-12 col-lg-2  footer_elem" >
-                        <h5>Our Services</h5>
+                        <h4 className='footer_head'>Our Services</h4>
                         <ul>
                             <li>Home Services</li>
                             <li>Professional Work</li>
@@ -32,7 +39,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="col-sm-12 col-lg-2  footer_elem" >
-                        <h5>Know Us</h5>
+                        <h4 className='footer_head'>Know Us</h4>
                         <ul>
                             <li>Home Services</li>
                             <li>Professional Work</li>
@@ -41,7 +48,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="col-sm-12 col-lg-2  footer_elem" >
-                        <h5>Contact Us</h5>
+                        <h4 className='footer_head'>Contact Us</h4>
                         <ul>
                             <li>Home Services</li>
                             <li>Professional Work</li>
@@ -50,7 +57,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="col-sm-12 col-lg-2  footer_elem" >
-                        <h5>Others Links</h5>
+                        <h4 className='footer_head'>Others Links</h4>
                         <ul>
                             <li>Home Services</li>
                             <li>Professional Work</li>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useContext } from 'react';
-import { FaOutdent, FaSearch, FaRegUserCircle, FaSignInAlt } from 'react-icons/fa'
+import { FaOutdent, FaSearch, FaRegUserCircle, FaSignInAlt,fsPerson  } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 import { globalValue } from '../../App';
 
@@ -11,7 +11,7 @@ const Navbar = () => {
 
     // const [model,setModle] = useState(false);
 
-    const { modelFunction, sliderFunction } = useContext(globalValue)
+    const { modelFunction, sliderFunction} = useContext(globalValue)
 
     // const modelFunction = ()=>{
     //     setModle(true)
@@ -23,7 +23,7 @@ const Navbar = () => {
                 <div className="row bg-primary nav_row">
                     <div className="col-sm-4 col-lg-2 col-md-3 d-flex text-white logo">
                         <h3 id='heading_logo'>Local<span className='text-warning'>Sewa</span></h3>
-                        <h2 className=''> <FaOutdent className='d-lg-none d-sm-block '
+                        <h2 className=''> <fsPerson className='d-lg-none d-sm-block '
                             onClick={sliderFunction}
                         /></h2>
 
